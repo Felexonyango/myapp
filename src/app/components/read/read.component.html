@@ -1,0 +1,9 @@
+<div class="right" *ngIf="tutorials">
+<ul>
+    <li *ngFor="let tutorial of tutorials | async">
+      <p>{{tutorial.name}}</p>
+      <p>{{tutorial.description}}</p>
+    </li>
+</ul>
+
+</div>
